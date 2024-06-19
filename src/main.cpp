@@ -55,7 +55,7 @@ void setup()
   LoRa.setPins(csPin, resetPin, irqPin);// set CS, reset, IRQ pin
  
   // Inicializa o radio LoRa em 915MHz e checa se há erro.
-  if (!LoRa.begin(915E6)) 
+  if (!LoRa.begin(9275E5)) 
   {             
     Serial.println(" Erro ao iniciar modulo LoRa. Verifique a coenxao dos seus pinos!! ");
     while (true);                      
